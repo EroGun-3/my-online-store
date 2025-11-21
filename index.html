@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Интернет-Магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Мой Магазин</h1>
+            <div class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">Все товары</button>
+                <button class="filter-btn" data-category="smartphones">Смартфоны</button>
+                <button class="filter-btn" data-category="laptops">Ноутбуки</button>
+                <button class="filter-btn" data-category="audio">Аудио</button>
+                <button class="filter-btn" data-category="pcs">ПК</button>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <div class="loading">Загрузка товаров...</div>
+            </div>
+        </div>
+    </main>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <h2>Корзина</h2>
+            <div class="cart-items" id="cart-items"></div>
+            <div class="cart-total">
+                Итого: <span id="total-price">0</span> руб.
+            </div>
+            <button class="checkout-btn">Оформить заказ</button>
+            <button class="close-cart">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
